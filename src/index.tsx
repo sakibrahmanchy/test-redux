@@ -19,9 +19,13 @@ import { DemoPage, HomePage } from './pages';
         <React.StrictMode>
             <ReduxProvider store={configureAppStore(preloadedState)}>
                 <AppContextProvider>
+                    <HomePage />
                     <DemoPage />
                 </AppContextProvider>
             </ReduxProvider>
         </React.StrictMode>
     );
 })();
+
+// Fetch data everytime app reloads and store them in redux state;
+// Use localstorage;

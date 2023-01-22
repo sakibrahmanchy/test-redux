@@ -1,12 +1,12 @@
 import React from 'react';
+import { TaskPage } from '..';
 import { ErrorBoundary } from '../../components';
 
 const HomePage = () => {
     return (
-        <ErrorBoundary>
-            <h1>React Redux Boilerplate</h1>
-            <p>You can put the components of your app here</p>
-        </ErrorBoundary>
+        <div>
+            <TaskPage />
+        </div>
     );
 };
 

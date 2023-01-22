@@ -7,6 +7,7 @@ import { ErrorBoundary } from '../../components';
 import { selectWebmapId } from '../../store/Map/selectors';
 import classNames from 'classnames';
 import { updateWebmap } from '../../store/Map/thunks';
+import TaskCreate from '../Task/TaskCreate';
 
 const WebmapSelector = () => {
     const dispatch = useDispatch();
@@ -59,8 +60,10 @@ const DemoPage = () => {
     return (
         <>
             <ErrorBoundary>
-                <MapContainer />
-                <WebmapSelector />
+                {/* <MapContainer /> */}
+                {/* <WebmapSelector /> */}
+                <span>Map Component</span>
+                <TaskCreate />
             </ErrorBoundary>
         </>
     );
